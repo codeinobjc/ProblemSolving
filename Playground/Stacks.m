@@ -6,15 +6,16 @@
 //  Copyright © 2019 com.codeinobjc. All rights reserved.
 //
 
-#import "Stack.h"
-@interface Stack()
+#import "Stacks.h"
+@interface DynamicStack()
 @property(nonatomic,retain) NSMutableArray *stackStorage;
 @end
 
 @interface StackWithList ()
 @property(nonatomic,retain) DoubleList *stackStorage;
 @end
-@implementation Stack
+
+@implementation DynamicStack
 -(id)init
 {
 	if (self == [super init]) {

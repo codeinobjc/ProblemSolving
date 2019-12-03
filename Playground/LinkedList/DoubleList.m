@@ -6,7 +6,7 @@
 //  Copyright © 2019 com.codeinobjc. All rights reserved.
 //
 
-#import "LinkedList.h"
+#import "DoubleList.h"
 @interface Node()
 @property(nonatomic,retain) id dataToStore;
 @end
@@ -28,8 +28,6 @@
 
 @implementation Node
 @end
-
-
 
 @implementation DoubleNode
 -(id)initWithData:(id)data
@@ -193,15 +191,20 @@
 	[self printListFromHead:self.headNode.nextNode];
 }
 
+-(Node*)searchFromHeadWithData:(id)data
+{
+	return [self searchFromHead:self.headNode WithData:data];
+}
+
 -(DoubleNode*)searchFromHead:(DoubleNode*)headNode WithData:(id)data {
 	DoubleNode *searchNode = nil;
-	if (self.headNode == self.tailNode) {
+	if (headNode == self.tailNode) {
 		return nil;
 	}
+	[self searchFromHead:headNode.nextNode WithData:data];
 	if ([self.headNode.dataToStore isEqual:data]) {
 		searchNode = self.headNode;
 	}
-	[self searchFromHead:self.headNode.nextNode WithData:data];
 	return searchNode;
 }
 
@@ -228,8 +231,17 @@
 	[self counterWithHead:self.headNode.nextNode];
 	return counter;
 }
-@end
 
-@implementation LinkedList
-
+-(DoubleNode*)find:(NSUInteger)data withRootNode:(DoubleNode*)rootNode
+{
+    //case 1: tree is empty
+    //case 2: tree has one node
+    //case 3: data is on the left subtree of the root node
+    //case 4: data is on the right subtree of the root node
+    if(rootNode == nil) return nil;
+    if([rootNode.dataToStore isEqual:[NSNumber numberWithInteger:data]])
+		return rootNode;
+	return [self find:data withRootNode:rootNode.previousNode];
+    return [self find:data withRootNode:rootNode.nextNode];
+}
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LinkedList.h"
+#import "DoubleList.h"
 NS_ASSUME_NONNULL_BEGIN
 @protocol Stack <NSObject>
 -(NSUInteger)count;
@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(id)pop;
 @end
 
-@interface Stack : NSObject<Stack>
+@interface DynamicStack : NSObject<Stack>
 
 @end
 

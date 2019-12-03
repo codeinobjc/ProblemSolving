@@ -10,12 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LinkedList : NSObject
-
-@end
 @class Node;
 
-@protocol LinkedList<NSObject>
+@protocol DoubleList<NSObject>
 @required
 -(void)insertNodeAtHeadWithData:(id)data;
 -(void)insertNodeAtTailWithData:(id)data;
@@ -25,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(Node*)deleteNodeAtTail;
 -(Node*)deleteNodeWithData:(id)data;
 - (void)printListFromHead:(Node*)headNode;
--(Node*)searchFromHead:(Node*)headNode WithData:(id)data;
+-(Node*)searchFromHeadWithData:(id)data;
 -(NSUInteger)count;
 -(Node*)nodeAtHead;
 @end
@@ -36,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DoubleNode : Node
 @end
 
-@interface DoubleList : Node<LinkedList>
+@interface DoubleList : Node<DoubleList>
 @end
 
 NS_ASSUME_NONNULL_END

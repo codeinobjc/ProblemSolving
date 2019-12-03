@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE64D59D2388E266006E0D61 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64D59C2388E266006E0D61 /* LinkedList.m */; };
-		BE64D5A0238DF4C6006E0D61 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64D59F238DF4C6006E0D61 /* Stack.m */; };
+		BE64D59D2388E266006E0D61 /* DoubleList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64D59C2388E266006E0D61 /* DoubleList.m */; };
+		BE64D5A0238DF4C6006E0D61 /* Stacks.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64D59F238DF4C6006E0D61 /* Stacks.m */; };
+		BE64D5A3239309B7006E0D61 /* SingleList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64D5A2239309B7006E0D61 /* SingleList.m */; };
+		BE64D5AC23936C6B006E0D61 /* SingleArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64D5AB23936C6B006E0D61 /* SingleArrayList.m */; };
 		BE72F5F62383786B00686679 /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = BE72F5F52383786B00686679 /* Arrays.m */; };
+		BE7E5D7A2395ED4B00846CA2 /* Queues.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7E5D792395ED4B00846CA2 /* Queues.m */; };
 		BE9A65C52370F3D20026C551 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9A65C42370F3D20026C551 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -26,12 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BE64D59B2388E266006E0D61 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
-		BE64D59C2388E266006E0D61 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
-		BE64D59E238DF4C6006E0D61 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
-		BE64D59F238DF4C6006E0D61 /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		BE64D59B2388E266006E0D61 /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleList.h; sourceTree = "<group>"; };
+		BE64D59C2388E266006E0D61 /* DoubleList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleList.m; sourceTree = "<group>"; };
+		BE64D59E238DF4C6006E0D61 /* Stacks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stacks.h; sourceTree = "<group>"; };
+		BE64D59F238DF4C6006E0D61 /* Stacks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stacks.m; sourceTree = "<group>"; };
+		BE64D5A1239309B7006E0D61 /* SingleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleList.h; sourceTree = "<group>"; };
+		BE64D5A2239309B7006E0D61 /* SingleList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleList.m; sourceTree = "<group>"; };
+		BE64D5AA23936C6B006E0D61 /* SingleArrayList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleArrayList.h; sourceTree = "<group>"; };
+		BE64D5AB23936C6B006E0D61 /* SingleArrayList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleArrayList.m; sourceTree = "<group>"; };
 		BE72F5F42383786B00686679 /* Arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arrays.h; sourceTree = "<group>"; };
 		BE72F5F52383786B00686679 /* Arrays.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
+		BE7E5D782395ED4B00846CA2 /* Queues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queues.h; sourceTree = "<group>"; };
+		BE7E5D792395ED4B00846CA2 /* Queues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queues.m; sourceTree = "<group>"; };
 		BE9A65C12370F3D20026C551 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9A65C42370F3D20026C551 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +56,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE64D5AD23946470006E0D61 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				BE64D59B2388E266006E0D61 /* DoubleList.h */,
+				BE64D59C2388E266006E0D61 /* DoubleList.m */,
+				BE64D5A1239309B7006E0D61 /* SingleList.h */,
+				BE64D5A2239309B7006E0D61 /* SingleList.m */,
+				BE64D5AA23936C6B006E0D61 /* SingleArrayList.h */,
+				BE64D5AB23936C6B006E0D61 /* SingleArrayList.m */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		BE7E5D772395ECFF00846CA2 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				BE64D59E238DF4C6006E0D61 /* Stacks.h */,
+				BE64D59F238DF4C6006E0D61 /* Stacks.m */,
+				BE7E5D782395ED4B00846CA2 /* Queues.h */,
+				BE7E5D792395ED4B00846CA2 /* Queues.m */,
+			);
+			name = ADT;
+			sourceTree = "<group>";
+		};
 		BE9A65B82370F3D20026C551 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +102,8 @@
 				BE9A65C42370F3D20026C551 /* main.m */,
 				BE72F5F42383786B00686679 /* Arrays.h */,
 				BE72F5F52383786B00686679 /* Arrays.m */,
-				BE64D59B2388E266006E0D61 /* LinkedList.h */,
-				BE64D59C2388E266006E0D61 /* LinkedList.m */,
-				BE64D59E238DF4C6006E0D61 /* Stack.h */,
-				BE64D59F238DF4C6006E0D61 /* Stack.m */,
+				BE64D5AD23946470006E0D61 /* LinkedList */,
+				BE7E5D772395ECFF00846CA2 /* ADT */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -134,10 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE64D5A0238DF4C6006E0D61 /* Stack.m in Sources */,
-				BE64D59D2388E266006E0D61 /* LinkedList.m in Sources */,
+				BE64D5A0238DF4C6006E0D61 /* Stacks.m in Sources */,
+				BE64D5A3239309B7006E0D61 /* SingleList.m in Sources */,
+				BE64D59D2388E266006E0D61 /* DoubleList.m in Sources */,
 				BE9A65C52370F3D20026C551 /* main.m in Sources */,
 				BE72F5F62383786B00686679 /* Arrays.m in Sources */,
+				BE7E5D7A2395ED4B00846CA2 /* Queues.m in Sources */,
+				BE64D5AC23936C6B006E0D61 /* SingleArrayList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
